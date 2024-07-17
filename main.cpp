@@ -12,7 +12,7 @@ class Greeter {
 public:
     static void sayHello(const std::string& name) {
         // Loop through letters in name
-        for (char c : name) {
+        for (const char c : name) {
             std::string letter(1, c);
             std::cout << letter << std::endl;
         }
